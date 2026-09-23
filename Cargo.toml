@@ -1,0 +1,19 @@
+[package]
+name = "httpload"
+version = "0.1.0"
+edition = "2021"
+description = "A simple, parallel cross-platform HTTP load generator"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/httpload"
+readme = "README.md"
+keywords = ["http", "load", "benchmark", "cli"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = "0.12"
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+colored = "2"
+futures = "0.3"
